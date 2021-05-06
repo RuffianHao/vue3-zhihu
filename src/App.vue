@@ -1,11 +1,16 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="app" class="zhihu-app">
+    <Layout></Layout>
   </div>
-  <router-view />
 </template>
-
+<script>
+import Layout from "@/layout/index.vue";
+export default {
+  components: {
+    Layout,
+  },
+};
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
